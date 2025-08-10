@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandu Portfolio</title>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    
+</head><body>
+  
+  <center>
+       <!--sidebar-->
+        <div class="sidebar" id="sidebar">
+        <div class="header">
+           
+     
+        <nav style="display: flex;gap:15px;">
+                  <a href="#home">Home</a>
+                  <a href="#about">About Me</a>
+                  <a href="#skills">Skills</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#Education">Education </a>
+                  <a href="#certificates">Certificates</a>
+                  <a href="#contact">Contact Me</a>
+                  <a href="resume.html">Resume</a>
+                </nav>
+             
+                </center>
+        </div>
+        <img src="chandu.jpg" alt="Profile Image" class="profile-img">
+       
+        <h1>CHANDANA M G</h1>
+        
+        <a href="resume.html" class="download-btn" download>Resume</a>
+        <a href="bio-data.html" >Bio-Data</a> 
+    <p class="toggle-btn"onlick="tooglesidebar()">-=</p>
+        <!--other sections-->
+        <br><section id="home" class="girl">
+            <div class="girl-content" >
+                <p class="intro">WELCOME TO MY FAMILY</p>
+                <h1>Hi,This is Chandana M G</h1>
+                <p class="subtitle">frontend Developer</p>
+                <p class="description">I'm a<b>frontend Developer</b>who builds user-friendly websites using HTML,CSS and Javascript.I design and develop responsive,interactive,and visually appealing interfaces.I ensure websites work smoothly across all devices and browsers.I Love creating,problem-solving,and improving user experiences.</p>
+                <div class="buttons">
+                    <a href="#about"><button class="hire-button">About Me</button></a>
+                    <a href="resume.html"><button class="download-cv">Resume<span>&#4CAF50</span></button></a>
+                </div>
+                <div class="social media-icons">
+                    <nav style="display: flex;gap:15px;">
+                    <a href="http://www.linkedin.com/in/chandana-m-g-b09990260" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="http://github.com/Chandana11MG" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.snapchat.com/add/chandana112004"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </nav>
+            </div>
+            <div class="profile-photo">
+                <div class="photo-border">
+                <div class="circular-text">
+                </div>
+                </div>
+            </div>
+        </section>
+        <hr color="white">
+        <section id="about" class="girl1">
+            <div class="girl-content1">
+                <h1 style="color:black;text-align:center;">About Me</h1><br><br>
+                <p> Hii..!<b>Chandana M G</b>,a student with passionate and have strong interest in technology.My goal is to constantly improve myself,make My parents proud,and gain confidence through continues learng.</p><br><br>
+                <p>Looking forward to work in organization with challenging postion to expand and utilise my learning,skills,and knowledge.posses excellent communication have keen eye for detial.flexible to work at any envinornment as requried.Looking for role where I can grow and learn from experienced team members and make my way easy.</p><br><br>
+                <p>Feel free and comfortable to reach out if you like to collaborate! with me</p><br><br>
+                <p>Let Us Grow Togethere!!..</p>
+    
+            </div>
+        </section>
+         <!-- Skills Section -->
+        <hr color="white">
+        <section id="skills">
+          <h2>My Skills</h2>
+          <div class="skills-container" >
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">C</div>
+          </div>
+        </section>
+    
+        <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+
+        <section class="certificates" id="certificates">
+          <h1 class="section-title">Certificates</h1>
+          <div class="certificates-container">
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi1.jpg" alt="Python Certificate">
+              <p>Completed Python Course in Kaggle</p> 
+            </div>
+            <!-- Repeat 5 more cards -->
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi2.jpg" alt="Web Development">
+              <h3>Completed Full Web Dev</h3>
+              <p>HTML, CSS, JavaScript</p>
+             
+            </div>
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi3(1).jpg" alt="Java OOPs">
+              <h3>ISTE </h3>
+              <p>Participation Certificate</p>
+              
+            </div>
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi3(2).jpg" alt="Java OOPs">
+              <h3>ISTE </h3>
+              <p>Participation Certificate</p>
+             
+            </div>
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi4.jpg" alt="UI/UX">
+              <h3>UI/UX for Beginners</h3>
+              <p>Basic design understanding</p>
+              
+            </div>
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi5.jpg" alt="Hackathon 1">
+              <h3>Participation Certificate</h3>
+              
+            </div>
+            <div class="certificate-card" onclick="zoomImage(this)">
+              <img src="certi6.jpg" alt="Hackathon 2">
+              <h3>Participation Certificate</h3>
+             
+            </div>
+          </div>
+        </section>
+      
+       <!--Modal structure-->
+       <div id="certificateModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="certificateImage">
+       </div>
+    
+       <hr color="white">
+       <section id="projects" class="girl3">
+        <h1 style="color:black;text-align:center;">projects</h1><br><br>
+        <div class="grid-container">
+        <center>
+        <div class="projects-card"
+        <img src="Portfolio.jpg"alt="portfolie">
+        <div class="projects-card:hover">
+            <h3>personal Portfolio</h3>
+            <p>personal portfolio web site showcasing my skills,projects,and achievements with creative and responsive design.</p>
+            
+        </div>
+        </div>
+        <div class="projects-card">
+            <img src="chatbot.jpg"alt="AI chatbot">
+            <div class="projects-card:hover">
+                <h3>AI chatbot for college website</h3>
+                <p>A Python-based AI chatbot designed to provide quick,accurate responses and enchance user interaction</p>
+               
+            </div>
+        </div>
+        <div class="projects-card">
+            <img src="car.jpg" alt="Car Rental System">
+            <div class="card-content">
+                <h3>Car Rental System</h3>
+                <p>A Car Rental System in C allows users to view available cars,select a car,and make a rental reservation by inputing the rental period and payment details</p>
+                
+            </div>
+        </div>
+        <div class="projects-card">
+            <img src="emoji.jpg" alt="Emoji Finder">
+            <div class="card-content">
+                <h3>Emoji Finder</h3>
+                <p>A software tool that helps users to find emojis based on keywords and phrases</p>
+                
+          </div>
+            </div>
+        </div>
+</section>
+    <hr color="white">
+    <section id="Education" class="girl4">
+         <h1 style="color:black;text-align:center;">Education</h1><br><br>
+         <center>
+            <div class="block">
+                <h3 style="color: blue;">Engineering:</h3>
+                <p>Channabasaveshwara Institute Of Technology,Gubbi Tumkuru</p>
+            </div><br>
+            <div class="block">
+                <h3 style="color: blue;">Pre-University:</h3>
+                <p>Maesh Pre-University college,HSR layout Bengaluru</p>
+            </div><br>
+            <div class="block">
+                <h3 style="color: blue;">school:</h3>
+                <p>The Paradise Residential School,Hosa Road Bengaluru</p>
+            </div><br>
+            </div>
+         </center>
+         </section>
+         <hr color="white">
+        <section id="Contact" class="girl5">
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                  <p>Email: chandanamg11@gmail.com</p>
+                  <p>Phone: +91 7676439831</p>
+                  <p>Location: Karnataka, India</p>
+                
+                <form action="https://formspree.io/f/yourFormID" method="POST">
+                  <input type="text" name="name" placeholder="Your Name" required />
+                  <input type="email" name="email" placeholder="Your Email" required />
+                  <textarea name="message" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                
+                  <div id="popup" class="popup">
+                    <div class="popup-content">
+                      <div class="popup-icon">✅</div>
+                      <p>Thank you! Your message has been sent successfully.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </section>
+          <!--social Media Icons-->
+          <div class="social-media">
+            <nav style="display: flex;gap:15px;">
+            <a href="https://www.linkedin.com"target="_balnk"><i class ="fab fa-linkedin.com"></i></a>
+            <a href="http://github.com/Chandana11MG"target="_balnk"><i class ="fab fa-github.com"></i></a>
+            <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>"
+        </nav>
+          </div>
+        </div>
+      </section>
+    <!--scroll to top button-->
+    <button onclick="scrollTop()"id="scrollTopbtn"title="Go to top">
+      &uarr;
+    </button>  
+     </div>
+    </body>
+    <script src="script.js"></script>
+    </html>
+    
